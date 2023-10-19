@@ -1,0 +1,37 @@
+2023 Oct 19 Thu, 16:04:37: ====================
+2023 Oct 19 Thu, 16:04:37: Start Prepare TREK_dataset
+2023 Oct 19 Thu, 16:04:37: --------------------
+2023 Oct 19 Thu, 16:04:37: Transformer = klue/bert-base
+2023 Oct 19 Thu, 16:04:37: Max Sequence Length = 512
+2023 Oct 19 Thu, 16:04:37: --------------------
+2023 Oct 19 Thu, 16:04:41: Start Preprocessing the Dataset
+2023 Oct 19 Thu, 16:04:41: --------------------
+2023 Oct 19 Thu, 16:04:43: Start Constructing Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:04:53: Finish Constructing 200 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:05:06: Finish Constructing 400 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:05:19: Finish Constructing 600 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:05:46: Finish Constructing 1000 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:05:58: Finish Constructing 1200 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:06:11: Finish Constructing 1400 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:06:23: Finish Constructing 1600 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:06:35: Finish Constructing 1800 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:06:49: Finish Constructing 2000 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:07:02: Finish Constructing 2200 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:07:15: Finish Constructing 2400 Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:07:22: Finish Constructing Doc Inputs for train_annotated Files
+2023 Oct 19 Thu, 16:07:22: --------------------
+2023 Oct 19 Thu, 16:07:22: Start Constructing Doc Inputs for dev Files
+2023 Oct 19 Thu, 16:07:22: Finish Constructing 0 Doc Inputs for dev Files
+2023 Oct 19 Thu, 16:07:33: Finish Constructing 200 Doc Inputs for dev Files
+2023 Oct 19 Thu, 16:07:39: Finish Constructing Doc Inputs for dev Files
+2023 Oct 19 Thu, 16:07:39: --------------------
+2023 Oct 19 Thu, 16:07:39: Start Constructing Doc Inputs for test Files
+2023 Oct 19 Thu, 16:07:39: Finish Constructing 0 Doc Inputs for test Files
+2023 Oct 19 Thu, 16:07:52: Finish Constructing 200 Doc Inputs for test Files
+2023 Oct 19 Thu, 16:08:02: Finish Constructing Doc Inputs for test Files
+2023 Oct 19 Thu, 16:08:02: --------------------
+2023 Oct 19 Thu, 16:08:02: Finish Preparing dev_ins
+2023 Oct 19 Thu, 16:08:02: Finish Preparing Entity & Relation Type Embeddings
+2023 Oct 19 Thu, 16:08:02: --------------------
+2023 Oct 19 Thu, 16:08:02: Finish Prepare TREK_dataset
+2023 Oct 19 Thu, 16:08:02: ====================
