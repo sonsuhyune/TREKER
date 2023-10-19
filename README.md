@@ -18,7 +18,7 @@ wandb
 ## TREK Dataset
 Our **TREK** dataset can be downloaded <a href="https://drive.google.com/file/d/11VX3xwhjVknDw0iqitpt1g4XbHWkBgwn/view?usp=sharing">here</a>.
 
-(*Due to legal review issues with NAVER corp., only a portion of the dataset is publicly available. We will release the full dataset soon.*)
+(*Due to ethical inspection, only a portion of the dataset is publicly available. We will release the full dataset soon.*)
 
 ## TREKER 
 ### Run
