@@ -14,7 +14,7 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "5"
 from setproctitle import setproctitle
 
-setproctitle("")
+setproctitle("TREK")
 
 
 class DocInput:
@@ -183,8 +183,7 @@ def main():
 
     myprint(f'Finish {args.stage} {args.dataset}', info.FILE_STDOUT,0)
     myprint('=' * 20, info.FILE_STDOUT,0)
-    print("total_dic: ", total_dic)
-    print("total_pass: ", total_pass)
+
 
 
 if __name__ == '__main__':

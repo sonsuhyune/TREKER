@@ -24,7 +24,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "4,5,6,7"
 # os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 from setproctitle import setproctitle
-setproctitle("suhyun_kluebert_base_infer")
+setproctitle("treker")
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -436,24 +436,24 @@ def main():
 
 
     best_f1, best_epoch = 0, 0
-    # for idx_epoch in range(args.num_epoch):
-    #     print("here")
-    #     epoch_f1 = test(args, info, info.MODE_DEV, inputs_dev, tokenizer, model, if_final=False, rej_rate=0,
-    #                     all_shifts=None)
-    #     print("test epoch_f1:  ",epoch_f1)
-    #     train(args, info, idx_epoch, inputs_train, model, optimizer, scheduler)
-    #     epoch_f1 = test(args, info, info.MODE_DEV, inputs_dev, tokenizer, model, if_final=False, rej_rate=0,
-    #                     all_shifts=None)
-    #
-    #     if epoch_f1 >= best_f1:
-    #         best_f1, best_epoch = epoch_f1, idx_epoch
-    #         torch.save(model.state_dict(), f'{info.FILE_MODEL}')
-    #         myprint(f'This is the Best Performing Epoch by far - Epoch {idx_epoch} F1 {epoch_f1:.4f}', info.FILE_STDOUT,args.local_rank)
-    #     else:
-    #         myprint(
-    #             f'Not the Best Performing Epoch by far - Epoch {idx_epoch} F1 {epoch_f1:.4f} vs Best F1 {best_f1:.4f}',
-    #             info.FILE_STDOUT,args.local_rank)
-    #     myprint('-' * 20, info.FILE_STDOUT,args.local_rank)
+    for idx_epoch in range(args.num_epoch):
+        print("here")
+        epoch_f1 = test(args, info, info.MODE_DEV, inputs_dev, tokenizer, model, if_final=False, rej_rate=0,
+                        all_shifts=None)
+        print("test epoch_f1:  ",epoch_f1)
+        train(args, info, idx_epoch, inputs_train, model, optimizer, scheduler)
+        epoch_f1 = test(args, info, info.MODE_DEV, inputs_dev, tokenizer, model, if_final=False, rej_rate=0,
+                        all_shifts=None)
+
+        if epoch_f1 >= best_f1:
+            best_f1, best_epoch = epoch_f1, idx_epoch
+            torch.save(model.state_dict(), f'{info.FILE_MODEL}')
+            myprint(f'This is the Best Performing Epoch by far - Epoch {idx_epoch} F1 {epoch_f1:.4f}', info.FILE_STDOUT,args.local_rank)
+        else:
+            myprint(
+                f'Not the Best Performing Epoch by far - Epoch {idx_epoch} F1 {epoch_f1:.4f} vs Best F1 {best_f1:.4f}',
+                info.FILE_STDOUT,args.local_rank)
+        myprint('-' * 20, info.FILE_STDOUT,args.local_rank)
     print("info.FILE_MODEL",info.FILE_MODEL)
     model.load_state_dict(torch.load(f'{info.FILE_MODEL}', map_location=info.DEVICE_GPU))
     myprint(f'Load the Model from Epoch {best_epoch} with {info.MODE_DEV} F1 {best_f1:.4f}', info.FILE_STDOUT,args.local_rank)

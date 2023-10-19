@@ -31,7 +31,7 @@ class Info:
         self.DATASET = args.dataset
         self.DIR_CURR = os.getcwd()
         # self.DIR_DATA = os.path.join('Final')
-        self.DIR_DATA = os.path.join('/home/data/ssh5131/code/naver/EM_SAIS/dataset/')
+        self.DIR_DATA = os.path.join('dataset/')
         self.DIR_DATASET = os.path.join(self.DIR_DATA, self.DATASET)
         self.DIR_DATASET_ORI = os.path.join(self.DIR_DATASET, 'Original')
         self.DIR_DATASET_PRO = os.path.join(self.DIR_DATASET, 'Processed')
